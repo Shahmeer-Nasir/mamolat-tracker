@@ -252,4 +252,46 @@ h1, h2, h3, h4, h5, h6, p, a, li, ul {
   opacity: 0;
 }
 
+.mamolat-screen .wrap .labels-wrap {
+  margin-block-start: 9vh;
+  display: flex;
+  gap: 6rem;
+}
+.mamolat-screen .wrap .labels-wrap .label-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #e6e6e6;
+  padding: 0.75rem 0.5rem 0.75rem 0;
+  width: 13rem;
+  border-radius: 20rem;
+}
+.mamolat-screen .wrap .labels-wrap .label-wrap .lable-icon {
+  width: 5rem;
+  aspect-ratio: 1;
+}
+.mamolat-screen .wrap .labels-wrap .label-wrap .label-text {
+  font-size: 2rem;
+  color: #212020;
+  font-weight: 500;
+  line-height: 1;
+  max-width: 5rem;
+}
+@media (max-width: 600px) {
+  .mamolat-screen .wrap .labels-wrap {
+    gap: 1.75rem;
+  }
+  .mamolat-screen .wrap .labels-wrap .label-wrap {
+    gap: 0.5rem;
+    padding: 0.5rem 0.125rem 0.5rem 0;
+    width: 6rem;
+  }
+  .mamolat-screen .wrap .labels-wrap .label-wrap .lable-icon {
+    width: 2rem;
+  }
+  .mamolat-screen .wrap .labels-wrap .label-wrap .label-text {
+    font-size: 1rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -8,7 +8,7 @@
     <title>Ramadan Mamolat Tracker</title>
 </head>
 <body>
-    <section class="splash-screen">
+    <section class="splash-screen js-splash-screen">
         <div class="wrap">
             <div class="decorations">
                 <img src="assets/imgs/corner-deco.png" class="corner-deco tl" alt="decoration">
@@ -43,9 +43,192 @@
             </div>
         </div>
     </section>
-    <section class="mamolat-screen">
+    <section class="mamolat-screen js-mamolat-screen">
         <div class="wrap">
-
+            <div class="header">
+                <div class="label-albn-cont">
+                    <div class="label-albn"></div>
+                </div>
+                <div class="title-cont">
+                    <h2 class="day"></h2>
+                    <h2 class="ramadan"></h2>
+                </div>
+            </div>
+            <div class="tip-and-hadith">
+                <div class="tip">
+                    <h3 class="tip-title">Tip of the day</h3>
+                    <p class="tip-text">Take your multivitamins at suhoor to ensure your body obtains all its required nutrients throughout the day</p>
+                </div>
+                <div class="hadith">
+                    <div class="decorations">
+                        <img src="assets/imgs/corner-deco2.png" class="corner-deco tl" alt="decoration">
+                        <img src="assets/imgs/corner-deco2.png" class="corner-deco tr" alt="decoration">
+                        <img src="assets/imgs/corner-deco2.png" class="corner-deco bl" alt="decoration">
+                        <img src="assets/imgs/corner-deco2.png" class="corner-deco br" alt="decoration">
+                    </div>
+                    <h3 class="hadith-title">Hadith of the day</h3>
+                    <p class="hadith-text"> “Whoever would like his provision to be increased and his lifespan extended, let him uphold his ties of kinship.” — Prophet Muhammad (PBUH) [Bukhari]</p>
+                </div>
+            </div>
+            <div class="labels-wrap">
+                <div class="label-wrap">
+                    <img src="assets/imgs/calendar.png" alt="calendar" class="lable-icon">
+                    <p class="label-text">Daily Checklist</p>
+                </div>
+                <div class="label-wrap">
+                    <img src="assets/imgs/Quran.png" alt="calendar" class="lable-icon">
+                    <p class="label-text">Quran Tracker</p>
+                </div>
+                <div class="label-wrap">
+                    <img src="assets/imgs/prayer-rug.png" alt="calendar" class="lable-icon">
+                    <p class="label-text">Prayer Tracker</p>
+                </div>
+            </div>
+            <!-- START ------ MAMOLAT TRACKER -->
+            <div class="mamolat-wrap">
+                <div class="prayer-tracker">
+                    <div class="label-wrap">
+                        <img src="assets/imgs/prayer-rug.png" alt="calendar" class="lable-icon">
+                        <p class="label-text">Prayer Tracker</p>
+                    </div>
+                    <div class="prayer-fields">
+                        <div class="checkbox-fields">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" id="tahajjud" class="field-checkbox">
+                                <label for="tahajjud" class="field-label">Tahajjud</label>
+                            </div>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" id="fajr" class="field-checkbox">
+                                <label for="fajr" class="field-label">Fajr</label>
+                            </div>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" id="dhuhr" class="field-checkbox">
+                                <label for="dhuhr" class="field-label">Dhuhr</label>
+                            </div>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" id="asr" class="field-checkbox">
+                                <label for="asr" class="field-label">Asr</label>
+                            </div>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" id="maghrib" class="field-checkbox">
+                                <label for="maghrib" class="field-label">Maghrib</label>
+                            </div>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" id="isha" class="field-checkbox">
+                                <label for="isha" class="field-label">Isha</label>
+                            </div>
+                        </div>
+                        <div class="input-fields">
+                            <div class="input-wrap">
+                                <label for="taraweeh" class="field-label">Taraweeh</label>
+                                <input type="text" id="taraweeh" class="field-input">
+                            </div>
+                            <div class="input-wrap">
+                                <label for="qiyam" class="field-label">Qiyam</label>
+                                <input type="text" id="qiyam" class="field-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Quran-tracker">
+                    <div class="label-wrap">
+                        <img src="assets/imgs/Quran.png" alt="calendar" class="lable-icon">
+                        <p class="label-text">Quran Tracker</p>
+                    </div>
+                    <div class="Quran-fields">
+                        <div class="checkbox-fields">
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" id="surah-waqia" class="field-checkbox">
+                                <label for="surah-waqia" class="field-label">Surah Waqia</label>
+                            </div>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" id="surah-mulk" class="field-checkbox">
+                                <label for="surah-mulk" class="field-label">Surah Mulk</label>
+                            </div>
+                            <div class="checkbox-wrap">
+                                <input type="checkbox" id="surah-yasin" class="field-checkbox">
+                                <label for="surah-yasin" class="field-label">Surah Yasin</label>
+                            </div>
+                        </div>
+                        <div class="input-fields">
+                            <div class="input-wrap">
+                                <label for="para-recited" class="field-label">Para recited</label>
+                                <input type="text" id="para-recited" class="field-input">
+                            </div>
+                            <div class="input-wrap">
+                                <label for="verses-memorized" class="field-label">Verses memorized</label>
+                                <input type="text" id="verses-memorized" class="field-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="daily-tracker">
+                    <div class="label-wrap">
+                        <img src="assets/imgs/calendar.png" alt="calendar" class="lable-icon">
+                        <p class="label-text">Daily Checklist</p>
+                    </div>
+                    <div class="checkbox-fields">
+                        <div class="checkbox-wrap">
+                            <input type="checkbox" id="morning-tasbihat" class="field-checkbox">
+                            <label for="morning-tasbihat" class="field-label">Masnun Tasbihat (Morning)</label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <input type="checkbox" id="ishraq" class="field-checkbox">
+                            <label for="ishraq" class="field-label">Ishraq</label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <input type="checkbox" id="chasht" class="field-checkbox">
+                            <label for="chasht" class="field-label">Chasht</label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <input type="checkbox" id="dhikr" class="field-checkbox">
+                            <label for="dhikr" class="field-label">Dhikr</label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <input type="checkbox" id="muraqbat" class="field-checkbox">
+                            <label for="muraqbat" class="field-label">Muraqbat</label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <input type="checkbox" id="evening-tasbihat" class="field-checkbox">
+                            <label for="evening-tasbihat" class="field-label">Masnun Tasbihat (Evening)</label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <input type="checkbox" id="awabeen" class="field-checkbox">
+                            <label for="awabeen" class="field-label">Awabeen</label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <input type="checkbox" id="dua" class="field-checkbox">
+                            <label for="dua" class="field-label">Dua</label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <input type="checkbox" id="khidmat" class="field-checkbox">
+                            <label for="khidmat" class="field-label">Khidmat</label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <input type="checkbox" id="sadqa" class="field-checkbox">
+                            <label for="sadqa" class="field-label">Sadqa</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END ------ MAMOLAT TRACKER -->
+             <div class="deed-and-masjid">
+                <div class="deed">
+                    <div class="label-wrap">
+                        <img src="assets/imgs/deed.png" alt="calendar" class="lable-icon">
+                        <p class="label-text">Deed of the day</p>
+                    </div>
+                    <p class="deed-text">Make a list of all the people you need to forgive and make a plan to reach out to them</p>
+                </div>
+                <div class="masjid">
+                    <div class="input-fields">
+                        <div class="input-wrap">
+                            <label for="time-at-Masjid" class="field-label">Time spent at Masjid</label>
+                            <input type="text" id="time-at-Masjid" class="field-input">
+                        </div>
+                    </div>
+                </div>
+             </div>
         </div>
     </section>
     

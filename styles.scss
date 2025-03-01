@@ -295,3 +295,59 @@ h1, h2, h3, h4, h5, h6, p, a, li, ul {
     }
 }
 // END ---- SPLASH SCREEN ----
+
+
+// START ---- MAMOLAT SCREEN ----
+.mamolat-screen {
+
+    .wrap {
+
+        .labels-wrap {
+            margin-block-start: 9vh;
+            display: flex;
+            gap: 6rem;
+
+            .label-wrap {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                background-color: $light-gray;
+                padding: 0.75rem 0.5rem 0.75rem 0;
+                width: 13rem;
+                border-radius: 20rem;
+
+                .lable-icon {
+                    width: 5rem;
+                    aspect-ratio: 1;
+                }
+
+                .label-text {
+                    font-size: 2rem;
+                    color: $black;
+                    font-weight: 500;
+                    line-height: 1;
+                    max-width: 5rem;
+                }
+            }
+
+            @media #{$vpMobile600} {
+                gap: 1.75rem;
+
+                .label-wrap {
+                    gap: .5rem;
+                    padding: 0.5rem 0.125rem 0.5rem 0;
+                    width: 6rem;
+
+                    .lable-icon {
+                        width: 2rem;
+                    }
+
+                    .label-text {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+// END ---- MAMOLAT SCREEN ----
