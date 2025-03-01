@@ -299,8 +299,55 @@ h1, h2, h3, h4, h5, h6, p, a, li, ul {
 
 // START ---- MAMOLAT SCREEN ----
 .mamolat-screen {
+    padding: 0 4rem;
 
     .wrap {
+
+        .header {
+            display: flex;
+            gap: 4rem;
+            align-items: flex-end;
+
+            .label-albn-cont {
+                width: fit-content;
+                background-color: $primary-color;
+                padding: 8vh 1rem 1rem 1rem;
+                border-radius: 0 0 20rem 20rem;
+
+                .albn-img {
+                    width: 6rem;
+                    aspect-ratio: 1;
+                }
+            }
+
+            .title-cont {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                height: fit-content;
+                padding: 1.5rem 2.5rem;
+                border-radius: 20rem;
+                background-color: $light-gray;
+
+                .day-title {
+                    display: flex;
+                    margin-top: -0.5rem;
+                    color: $primary-color;
+                    font-size: 3rem;
+                    line-height: 1.2;
+                    
+                    .day-value {
+                        margin-left: 1.5rem;
+                    }
+                }
+
+                .ramadan {
+                    height: 4rem;
+                }
+            }
+
+        }
 
         .labels-wrap {
             margin-block-start: 9vh;

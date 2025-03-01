@@ -8,7 +8,7 @@
     <title>Ramadan Mamolat Tracker</title>
 </head>
 <body>
-    <section class="splash-screen js-splash-screen">
+    <section class="splash-screen invisible js-splash-screen">
         <div class="wrap">
             <div class="decorations">
                 <img src="assets/imgs/corner-deco.png" class="corner-deco tl" alt="decoration">
@@ -47,16 +47,19 @@
         <div class="wrap">
             <div class="header">
                 <div class="label-albn-cont">
-                    <div class="label-albn"></div>
+                    <img src="assets/imgs/albn-logo.png" alt="Al-Burhan Logo" class="albn-img"/>
                 </div>
                 <div class="title-cont">
-                    <h2 class="day"></h2>
-                    <h2 class="ramadan"></h2>
+                    <h2 class="day-title">Day <span class="day-value">1</span></h2>
+                    <img src="assets/imgs/ramadan.png" class="ramadan"></img>
                 </div>
             </div>
             <div class="tip-and-hadith">
                 <div class="tip">
-                    <h3 class="tip-title">Tip of the day</h3>
+                    <div class="label-wrap">
+                        <img src="assets/imgs/tip.png" alt="tip" class="lable-icon">
+                        <p class="label-text">Tip of the day</p>
+                    </div>
                     <p class="tip-text">Take your multivitamins at suhoor to ensure your body obtains all its required nutrients throughout the day</p>
                 </div>
                 <div class="hadith">
@@ -215,7 +218,7 @@
              <div class="deed-and-masjid">
                 <div class="deed">
                     <div class="label-wrap">
-                        <img src="assets/imgs/deed.png" alt="calendar" class="lable-icon">
+                        <img src="assets/imgs/deed.png" alt="deed" class="lable-icon">
                         <p class="label-text">Deed of the day</p>
                     </div>
                     <p class="deed-text">Make a list of all the people you need to forgive and make a plan to reach out to them</p>
@@ -231,6 +234,7 @@
              </div>
         </div>
     </section>
+    <a href="https://www.flaticon.com/free-icons" title="icons">Icons created by Smashicons - Flaticon</a>
     
 </body>
 </html>
